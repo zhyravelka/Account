@@ -1,0 +1,1831 @@
+*, 
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:rgb(18, 22, 34);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/*  header   */
+
+.header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding-left: 150px;
+}
+
+.header_title{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding: 0 30% 0 0;
+    margin-left: 7%;
+}
+
+.header_serch{
+    display: flex;
+    align-items: center;
+    background-color: #2b3741;
+    border-radius: 25px;
+    padding: 5px 15px;
+    width: 25%;
+    height: 10%;
+}
+
+.header_input{
+    background-color: transparent; 
+    border: none; 
+    color: #dcdde1; 
+    font-size: 16px; 
+    outline: none; 
+    flex-grow: 1; 
+    padding: 10px 0;
+}
+
+.search-input{
+  background-color: #2b3741;
+  border: none;
+  width: 100%;
+  color: #dcddde;
+  font-size: 18px;
+  outline: none;
+}
+
+.header_text{
+    background-color: #355f8a;
+    color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    margin-left: 20px;
+}
+
+.header_line{
+    border: 1px solid rgb(49, 59, 84);
+}
+/*  navigation   */
+
+.navigation {
+    display: flex;
+    gap: 10px;
+    padding: 10px 20px;
+    background-color: rgb(18, 22, 34);
+    overflow-x: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+    margin-right: 25%;
+}
+
+.nav_button {
+    background-color: #101416;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    align-items: center;
+    margin-right: 8px;
+}
+
+.nav_button i {
+    color: #007bff; 
+}
+
+.nav_button.active {
+    background-color: #355f8a;
+}
+
+.nav_button.active i {
+    color: #fff; 
+}
+
+.nav_button:hover {
+    background-color: #355f8a;
+}
+
+.nav_button:hover i {
+    color: #fff; 
+}
+
+.nav_button_circle{
+    background-color: #101416; 
+    color: #8d9195; 
+    border: 1px solid #8d9195; 
+    border-radius: 50%; 
+    width: 50px; 
+    height: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.nav_button_circle i {
+    font-size: 20px; 
+}
+
+.nav_button_circle:hover {
+    background-color: #355f8a; 
+    color: #fff; 
+}
+
+/*------company-info------*/
+
+.company_page_header{
+    background:  rgb(18, 22, 34);
+    padding: 20px;
+    color: #fff;
+}
+
+.company_navigation{
+    padding-left: 13%;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.company_navigation a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.company_navigation a:hover{
+    color: #007bff;
+}
+.company_navigation a.active{
+    color: rgb(59, 130, 246);
+}
+
+.path-separator {
+    margin: 0 8px;
+    color: #666;
+}
+.main_container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.company_container {
+    display: flex;
+    justify-content: space-between; 
+    padding: 0 13%; 
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.company_info {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 20px;
+    align-items: end;
+}
+
+.company_logo {
+    width: 102px;
+    height: 102px;
+}
+
+.company_details h1 {
+    font-size: 28px; 
+    margin-bottom: 5px;
+}
+.company_details {
+    font-style: normal;
+    line-height: 1.4;
+    position: relative;
+}
+
+.company_details::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 90px;
+    transform: translateY(-50%);
+    height: 40%;
+    width: 1px;
+    background-color: #2c3139;
+}
+
+.account_info {
+    margin-top: 30px;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+}
+
+.info_item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+}
+
+.info_item .label {
+    color: rgb(148, 163, 184);
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.info_item .value {
+    color: #fff;
+    font-size: 16px;
+}
+
+.info_item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background-color: #2c3139; 
+}
+
+
+.attention_box {
+    background: rgb(30, 34, 51);
+    border: 1px solid rgb(253, 210, 97);
+    border-radius: 25px;
+    padding: 24px;
+    width: 800px;
+}
+
+.attention_header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.attention_header i {
+    color: rgb(253, 210, 97);
+    font-size: 20px;
+}
+
+.attention_header h2 {
+    color: rgb(253, 210, 97);
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.attention_items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.attention_item {
+    border-radius: 8px;
+}
+
+.attention_item h3 {
+    color: rgb(229, 231, 235);
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.attention_item p {
+    color: rgb(138, 140, 152);
+    font-size: 14px;
+    margin: 0;
+}
+
+.attention_item a {
+    color: rgb(59, 130, 246);
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.attention_item a:hover {
+    text-decoration: underline;
+}
+
+/*---------------performance-metrics-------------*/
+
+.performance_metrics {
+    padding: 30px 13%;
+    background: rgb(18, 22, 34);
+}
+
+.performance_metrics h2 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.metrics_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.metric_card {
+    background: rgb(30, 34, 51);
+    width: 380px;
+    height: 240px;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; 
+    border: 1px solid #333364;  
+}
+
+.winnability_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.winnability_header h3, .metric_card h3, .metric_card_distribution h3{
+    color: #94A3B8;
+    font-weight: 400;
+}
+
+/* Winnability Card */
+.rating {
+    display: flex;
+    gap: 6px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #2C3139;
+}
+
+.dot.filled {
+    background: rgb(30, 64, 175);
+}
+
+.metric_value {
+    font-size: 50px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.metric_link {
+    color: #3B82F6;
+    text-decoration: none;
+     margin-top: auto;
+}
+
+.metric_link:hover {
+    text-decoration: underline;
+}
+
+/* Loss Ratio Card */
+.ratio_info {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.ratio_value {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
+.ratio_target {
+    color: rgb(138, 140, 152);
+    font-size: 20px;
+}
+
+/* Premium Growth Card */
+.growth_info {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.growth_value {
+    font-size: 48px;
+    font-weight: 300;
+    margin-bottom: 8px;
+    margin: 0;
+}
+
+.growth_label, .growth_target {
+    color: rgb(138, 140, 152);
+    font-size: 20px;
+    margin: 0;
+}
+
+/* Exposure Distribution Card */
+
+.metric_card_distribution{
+    background: rgb(30, 34, 51);
+    border-radius: 24px;
+    padding: 24px;
+    width: 470px;
+    height: 180px;
+    border: 1px solid #333364;
+}
+.distribution_list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.distribution_list_item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.distribution_item{
+    display: flex;
+    width: 50%;
+    height: 25px;
+    overflow: hidden;
+    background-color: rgb(64, 73, 107);
+    position: relative;
+    border-radius: 0 15px 15px 0;
+}
+
+.distribution_item.blue_marine_cargo{
+    width: 71%;
+    background: linear-gradient(to right, blue, rgb(123, 158, 168));
+}
+
+.distribution_item.blue_general_liability{
+    width: 20%;
+    background: linear-gradient(to right, blue, rgb(123, 158, 168));
+}
+
+.distribution_item.blue_workers_comp{
+    width: 8%;
+    background: linear-gradient(to right, blue, rgb(123, 158, 168));
+}
+
+
+
+.distribution_text {
+    color: #fff;
+    font-size: 14px;
+    min-width: 160px;
+    text-align: right;
+}
+
+/*----------policies_container-----------*/
+.policies {
+    padding: 0 13%;
+    background: rgb(18, 22, 34);
+}
+
+.policies h2 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.policies_container {
+    display: flex;
+    border-radius: 30px;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px 30px;
+    background-color: rgb(30, 34, 51);
+}
+
+.policy_card {
+    background: rgb(37, 42, 61);
+    border-radius: 24px;
+    padding: 24px;
+    height: 135px;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.policy_header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.fas.fa-ship{
+    font-size: 24px;
+    color: #3B82F6;
+} 
+
+.fas.fa-shield-alt{
+    font-size: 24px;
+    color: rgb(59, 185, 121);
+} 
+
+.fas.fa-user-hard-hat{
+    font-size: 24px;
+    color: rgb(106, 59, 246);
+} 
+
+.fas.fa-building{
+    font-size: 24px;
+    color: rgb(253, 210, 97);
+} 
+
+.fas.fa-umbrella{
+    font-size: 24px;
+    color: rgb(185, 59, 59);
+} 
+
+.policy_header h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.policy_details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.policy_details p {
+    margin: 0;
+    color: #94A3B8;
+    font-size: 14px;
+}
+
+.policy_details .premium {
+    color: #94A3B8;
+}
+
+.accounts_container{
+    background-color: rgb(49, 59, 84);
+    border-radius: 30px;
+    padding: 20px;
+    flex: 1;
+}
+    
+.accounts_tabs{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.accounts_serch{
+    display: flex;
+    align-items: center;
+    background-color: #2b3741;
+    border-radius: 25px;
+    padding: 5px 15px;
+    width: 20%;
+    height: 10%;
+}
+
+.accounts_input{
+    background-color: transparent; 
+    border: none; 
+    color: #dcdde1; 
+    font-size: 16px; 
+    outline: none; 
+    flex-grow: 1; 
+    padding: 10px 0;
+}
+
+.search_accounts_input{
+  background-color: #2b3741;
+  border: none;
+  width: 100%;
+  color: #dcddde;
+  font-size: 18px;
+  outline: none;
+}
+
+.accounts_tab {
+    width: 5%;
+    background-color: rgb(49, 59, 84);
+    color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.accounts_tab:hover{
+    background-color: #007bff;
+    color: #fff;
+}
+
+.accounts_tab.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.accounts_table{
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    color: #fff;
+    font-size: 14px;
+}
+
+.accounts_table thead tr{
+    background-color: rgb(37, 42, 61);;
+}
+
+.accounts_table tbody tr:nth-child(even) {
+    background-color: rgb(37, 42, 61);;
+}
+
+.work-queue, .portfolio_goals, .quick-actions, .market-intelligence {
+    background-color:  rgb(49, 59, 84);
+    border-radius: 30px;
+    padding: 20px;
+    flex: 1;
+}
+
+.accounts_table thead {
+    background-color: #1e272e;
+    text-align: left;
+}
+
+.accounts_table th, .accounts_table td {
+    padding: 15px;
+    border-bottom: 1px solid #2b3741;
+}
+
+.accounts_table th {
+    font-weight: bold;
+    color: #aaa;
+}
+
+.accounts_table td {
+    vertical-align: middle;
+}
+
+.accounts_table .work-queue_circle {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.accounts_table .accounts_subtext {
+    color: #aaa;
+    font-size: 12px;
+}
+
+.accounts_text{
+    color: #007bff;
+}
+
+.accounts_table .status {
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.accounts_status_blue{
+    width: 10px;
+    height: 10px;
+    background-color: #007bff; 
+    border-radius: 50%; 
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.accounts_status_green{
+    width: 10px;
+    height: 10px;
+    background-color: #28a745; 
+    border-radius: 50%; 
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.accounts_table i {
+    color: #aaa;
+    cursor: pointer;
+}
+.accounts_progress_bar_green, 
+.accounts_progress_bar_yellow,
+.accounts_progress_bar_red{
+    padding: 5px;
+    width: 50%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.accounts_progress_bar_green{
+    background-color: rgb(59, 185, 121);
+}
+.accounts_progress_bar_yellow{
+    background-color: rgb(253, 210, 97);
+}
+.accounts_progress_bar_red{
+    background-color: rgb(185, 59, 59);
+}
+
+.progress-value{
+    font-size: 16px;
+}
+
+.accounts_progress_bar{
+    background-color: rgb(30, 64, 175);
+    padding: 5px;
+    width: 75%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.accounts_status_triage{
+    width: 5%;
+    background-color: rgb(49, 59, 84);
+    color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.password-strength-indicator,
+.password-strength-indicator_small{
+    
+    background-color: rgb(30, 34, 51);
+    border: 1px solid #007bff; 
+    border-radius: 20px; 
+    padding: 8px 15px; 
+    display: flex;
+    align-items: center; 
+}
+.password-strength-indicator{
+    width: 75%;
+}
+.password-strength-indicator_small{
+    width: 55%;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%; 
+  background-color: #485460; 
+  margin-right: 8px; 
+}
+
+.dot.filled {
+  background-color: #007bff; 
+}
+
+.accounts_winnability_text{
+    color: #007bff; 
+    font-size: 16px;
+} 
+
+/*-------------account_status------------------*/
+
+.account_status {
+    padding: 30px 13%;
+    background: rgb(18, 22, 34);
+}
+
+.status_container {
+    gap: 24px;
+}
+
+.status_section {
+    flex: 1;
+}
+
+.account_status_header{
+    display: flex;
+    align-items: center;
+    gap: 50%;
+}
+
+.compliance_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.account_status_header h2,
+.compliance_header h2 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.status_content{
+    display: flex;
+    gap: 24px;
+}
+.status_content .status_section {
+    flex: 1;
+}
+
+.status_timeline {
+    background: rgb(30, 34, 51);
+    border-radius: 30px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 60%;
+    height: 160px;
+    border: 1px solid #333364;
+}
+
+.timeline_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    flex: 1;
+}
+
+.timeline_item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 16px;
+    left: calc(50% + 20px);
+    width: calc(100% - 40px);
+    border-top: 2px dashed rgb(59, 185, 121);
+}
+
+.status_icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid rgb(59, 185, 121);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.timeline_item:last-child .status_icon {
+    background: transparent;
+    border: 2px dashed gray;
+}
+
+.status_icon i {
+    color: rgb(59, 185, 121);
+    font-size: 14px;
+}
+
+.timeline_item:last-child .status_icon i {
+    color: gray;
+}
+
+.timeline_item p {
+    color: #fff;
+    font-size: 14px;
+    margin: 0;
+}
+
+.compliance_section {
+    background: rgb(30, 34, 51);
+    border-radius: 24px;
+    padding: 30px;
+    min-width: 400px;
+    width: 40%;
+    height: 160px;
+    border: 1px solid #333364;
+}
+
+.see_history {
+    color: rgb(59, 130, 246);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.compliance_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.compliance_item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.compliance_item i {
+    font-size: 20px; 
+    color: rgb(59, 185, 121);
+    background: rgb(30, 34, 51);
+    border-radius: 50%;
+}
+
+.compliance_item span {
+    color: #fff;
+    font-size: 20px;
+}
+
+/*------------------------*/
+
+.account_details {
+    background: rgb(18, 22, 34);
+    padding: 0 13%;
+}
+
+.account_details h2 {
+    color: rgb(229, 231, 235);
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.winnability_container {
+    display: flex;
+    overflow-x: auto;
+    background: rgb(30, 34, 51);
+    border-radius: 16px;
+    padding: 24px;
+    border: 1px solid #333364;
+    margin-bottom: 40px;
+}
+
+/* Sidebar Styles */
+
+
+.side_nav h2 {
+    color: rgb(229, 231, 235);
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+.decision_support{
+    background-color: rgb(37, 42, 61);
+    border-radius: 15px;
+    padding: 20px;
+}
+.count {
+    padding: 2px 8px;
+    font-size: 18px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    height: 30px;
+}
+
+.side_nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.side_nav li{
+    margin: 8px 0;
+}
+.side_nav a {
+    color: #94A3B8;
+    margin: 4px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.side_nav a.active {
+    color: rgb(59, 130, 246);
+}
+
+.risk_assessment, .documents{
+    padding-left: 15px;
+}
+
+.winnability_content{
+    padding: 20px;
+}
+
+.winnability_content h2 {
+    font-size: 46px;
+}
+
+/* Metrics Row */
+.metrics_row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 24px;
+    flex-direction: row;
+}
+
+.score_card, .trend_card{
+    background: rgb(37, 42, 61);
+    border-radius: 30px;
+    width: 360px;
+    height: 150px;
+    padding-left: 20px;
+    border: 1px solid #333364;
+}
+
+/* Score Card */
+.score_card h3, .trend_card h3, .position_card h3 {
+    color: rgb(229, 231, 235);
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+.score_value{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.score{
+    color: #fff;
+    font-size: 48px;
+    margin: 16px 0;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.rating span:last-child {
+    color: #94A3B8;
+    margin-left: 4px;
+}
+
+.rating_dots{
+    background-color: rgb(30, 34, 51);
+    border: 1px solid #007bff;
+    border-radius: 20px;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #485460;
+    margin-right: 8px;
+}
+
+.dot.filled {
+    background-color: #007bff;
+}
+
+/* Trend Card */
+.trend_graph {
+    height: 120px;
+    position: relative;
+    padding: 20px;
+    top: -40px;
+}
+
+.trend_line {
+    fill: none;
+    stroke: #3B82F6;
+    stroke-width: 2;
+}
+
+.months {
+    display: flex;
+    justify-content: space-between;
+    color: #94A3B8;
+    font-size: 12px;
+    margin-top: 8px;
+    padding: 0 10px;
+}
+
+/* Position Card */
+.position_card {
+    background: rgb(37, 42, 61);
+    border-radius: 24px;
+    width: 455px;
+    height: 150px;
+    padding-left: 20px;
+    border: 1px solid #333364;
+}
+
+.position_metrics{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.metric_list{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.metric_item{
+    display: flex;
+    width: 50%;
+    height: 25px;
+    overflow: hidden;
+    background-color: rgb(64, 73, 107);
+    position: relative;
+    border-radius: 0 15px 15px 0;
+}
+
+.metric span {
+    color: #94A3B8;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 8px;
+    padding-right: 10px;
+}
+
+.metric_text_active{
+    color: #fff;
+    font-size: 18px;
+    min-width: 160px;
+    text-align: right;
+}
+
+.metric_text{
+    color: rgb(138, 139, 152);
+    font-size: 18px;
+    min-width: 160px;
+    text-align: right;
+}
+
+
+.metric_item.blue_score{
+    width: 82%;
+    background: linear-gradient(to right, blue, rgb(123, 158, 168));
+}
+
+.metric_item.blue_market_avg{
+    width: 68%;
+    background: linear-gradient(to right, blue, rgb(123, 158, 168));
+}
+
+.metric_item.blue_competitor{
+    width: 88%;
+    background: linear-gradient(to right, blue, rgb(123, 158, 168));
+}
+
+/* Factors Container */
+
+.factors_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 24px;
+    gap: 15px;
+}
+
+.increasing_factors, .decreasing_factors {
+    background: rgb(37, 42, 61);
+    border-radius: 16px;
+    padding: 20px;
+    width: 590px;
+    height: 385px;
+    border: 1px solid #333364;
+}
+
+.increasing_factors_header{
+    display: flex;
+    gap: 20px;
+    align-items: baseline;
+}
+
+.increasing_factors h3, .decreasing_factors h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+.increasing_factors_icon{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid rgb(59, 185, 121);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.increasing_factors i{
+    color: rgb(34, 197, 94);
+}
+
+.decreasing_factors_header{
+    display: flex;
+    gap: 20px;
+    align-items: baseline;
+}
+
+.decreasing_factors_icon{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid rgb(253, 210, 97);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.decreasing_factors i{
+    color: rgb(253, 210, 97);
+}
+
+
+.factor_list {
+    padding-top: 20px;
+}
+
+.factor_item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.number_green {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(30, 34, 51, 0.95);
+    border: 1px solid rgb(59, 185, 121);
+    color: rgb(59, 185, 121);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+
+.number_yellow{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(30, 34, 51, 0.95);
+    border: 1px solid rgb(253, 210, 97);
+    color: rgb(253, 210, 97);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.factor_name {
+    color: #fff;
+    font-size: 16px;
+    min-width: 180px;
+}
+
+.brokers_container, .decreasing_container{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.progress_bar_brokers, .progress_bar_history, .progress_bar_industry, .progress_bar_multiline{
+    background: linear-gradient(to right, rgb(37, 42, 61), rgb(52, 211, 153));
+    color: rgb(17, 24, 39);
+    border: none;
+    border-radius: 0 15px 15px 0;
+    padding: 8px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+    height: 20px;
+}
+
+
+.progress_brokers.green, .progress_history.green, .progress_industry.green, .progress_multiline.green{
+    background: linear-gradient(to right, rgb(37, 42, 61), rgb(34, 197, 94));
+}
+
+.progress_bar_brokers{
+    width: 250px;
+}
+
+.progress_bar_history{
+    width: 200px;
+}
+
+.progress_bar_industry{
+    width: 180px;
+}
+
+.progress_bar_multiline{
+    width: 150px;
+}
+
+.factor span {
+    color: #94A3B8;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 8px;
+    padding-right: 10px;
+}
+
+.factor_text{
+    color: rgb(138, 139, 152);
+    font-size: 18px;
+    min-width: 160px;
+    text-align: right;
+}
+
+.progress_bar_premium, .progress_bar_total_exposure, .progress_bar_loss_ratio, .progress_bar_market_competition{
+    background: linear-gradient(to right, rgb(37, 42, 61), rgb(234, 179, 8));
+    color: rgb(17, 24, 39);
+    border: none;
+    border-radius: 0 15px 15px 0;
+    padding: 8px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+    height: 20px;
+}
+
+.factor_bar.negative {
+    background: linear-gradient(90deg, rgb(234, 179, 8) 0%, rgba(234, 179, 8, 0.3) 100%);
+}
+
+.progress_bar_premium{
+    width: 250px;
+}
+
+.progress_bar_total_exposure{
+    width: 200px;
+}
+
+.progress_bar_loss_ratio{
+    width: 180px;
+}
+
+.progress_bar_market_competition{
+    width: 150px;
+}
+
+/*------------ AI Recommendations --------------------*/
+
+.ai_recommendations {
+    position: relative;
+    background: rgb(37, 42, 61);
+    border-radius: 16px;
+    padding: 24px;
+    width: 1200px;
+    height: 300px;
+    border: 1px solid #333364;
+}
+
+.ai_recommendations_header {
+    position: relative;
+    top: -20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgb(37, 42, 61);
+}
+
+.ai_recommendations_header i {
+    color: rgb(59, 185, 121);
+    font-size: 24px;
+}
+
+.ai_recommendations_header h3 {
+    color: rgb(59, 185, 121);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.recommendation_items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    top: -20px;
+}
+
+.recommendation_content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+.recommendation_header_title{
+    color: rgb(229, 231, 235);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.recommendation_description {
+    color: rgb(138, 139, 152);
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.apply_button {
+    background: rgb(52, 211, 153);
+    color: rgb(17, 24, 39);
+    border: none;
+    border-radius: 30px;
+    padding: 8px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+    width: 180px;
+    height: 60px;
+}
+
+
+/* --------------Communication Section--------------- */
+
+.communication_section {
+    background: rgb(18, 22, 34);
+    padding: 0px 13%;
+}
+
+.communication_section h2 {
+    color: rgb(229, 231, 235);
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.communication_container{
+    overflow-x: auto;
+    background: rgb(30, 34, 51);
+    border-radius: 16px;
+    padding: 24px;
+    border: 1px solid #333364;
+    margin-bottom: 40px;
+}
+
+.communication_header_container{
+    overflow-x: auto;
+    background: rgb(30, 34, 51);
+    border-radius: 16px;
+}
+
+.communication_header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 20px;
+}
+
+.search_bar {
+    display: flex;
+    align-items: center;
+    background-color: rgb(30, 34, 51);
+    border-radius: 25px;
+    padding: 5px 15px;
+    width: 20%;
+    height: 10%;
+    border: 1px solid #333364;
+}
+
+.search_input_text{
+    background-color: rgb(30, 34, 51);
+    border: none;
+     width: 100%;
+    font-size: 18px;
+    outline: none;
+}
+
+.communication_btn{
+    width: 5%;
+    background-color: rgb(30, 34, 51);
+    color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.communication_btn:hover{
+    background-color: #007bff;
+    color: #fff;
+}
+
+.messages_container {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.message_item {
+    width: 780px;
+    background: rgb(30, 34, 51);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 1px solid #333364;
+}
+
+.message_title_status{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.message_status {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.new .message_status {
+    background: rgb(30, 64, 175);
+    color: white;
+    border-radius: 20px;
+}
+.message_title_status h2,.message_header h2{
+    font-size: 24px;
+}
+.message_header {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+
+.message_meta {
+    color: rgb(148, 163, 184);
+}
+
+.message_text{
+    color: rgb(229, 231, 235);
+    font-size: 16px;
+}
+
+.message_attachments {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.attachment_count{
+    background: rgb(57 89 73);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.reply_btn {
+    background: rgb(59, 130, 246);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+}
+
+
+/*policies_section*/
+
+.policies_section{
+    background: rgb(18, 22, 34);
+    padding: 0px 13%;
+}
+
+.policies_section h2 {
+    color: rgb(229, 231, 235);
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.policies_info_section{
+    background-color: rgb(30, 34, 51);
+    border-radius: 30px;
+    padding: 20px;
+    border: 1px solid #333364;
+}
+
+
+.policies_tabs{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.policies_serch{
+    display: flex;
+    align-items: center;
+    background-color: rgb(30, 34, 51);
+    border-radius: 25px;
+    padding: 5px 15px;
+    width: 300px;
+    height: 30px;
+}
+
+.policies_input{
+    font-size: 16px;
+    outline: none;
+    flex-grow: 1;
+    padding: 10px 0;
+    border: 1px solid #333364;
+    border-radius: 30px;
+    margin-left: 10px;
+}
+
+.search_policies_input{
+    background-color: rgb(30, 34, 51);
+    border: none;
+    width: 100%;
+    color: #dcddde;
+    font-size: 18px;
+    outline: none;
+}
+
+.policies_tab{
+    width: 5%;
+    background-color: rgb(49, 59, 84);
+    color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.policies_tab:hover{
+    background-color: #007bff;
+    color: #fff;
+}
+
+.policies_tab.active {
+    background-color: #007bff;
+    color: #fff;
+} 
+
+@media screen and (max-width: 768px) {
+    .policies_tab {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+}
+
+
+.policies_table{
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    color: #fff;
+    font-size: 14px;
+}
+
+.policies_table thead tr{
+    background-color: rgb(37, 42, 61);;
+}
+
+.policies_table tbody tr:nth-child(even) {
+    background-color: rgb(37, 42, 61);;
+}
+
+.policies_table thead {
+    background-color: #1e272e;
+    text-align: left;
+}
+
+.policies_table th, .policies_table td {
+    padding: 15px;
+    border-bottom: 1px solid #2b3741;
+}
+
+.policies_table th {
+    font-weight: bold;
+    color: #aaa;
+}
+
+.policies_table td {
+    vertical-align: middle;
+}
+
+.policies_table .work-queue_circle {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.policies_table .policies_subtext {
+    color: #aaa;
+    font-size: 12px;
+}
+
+.policies_table .status {
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.policies_status_yellow{
+    width: 10px;
+    height: 10px;
+    background-color: #c8d417; 
+    border-radius: 50%; 
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.policies_status_green{
+    width: 10px;
+    height: 10px;
+    background-color: #28a745; 
+    border-radius: 50%; 
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.policies_table i {
+    color: #aaa;
+    cursor: pointer;
+}
+
+.policies_rate_change{
+    color: red;
+}
+
+.policies_progress_bar_green, 
+.policies_progress_bar_yellow,
+.policies_progress_bar_red{
+    padding: 5px;
+    width: 60%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.policies_progress_bar_green{
+    background-color: rgb(59, 185, 121);
+}
+.policies_progress_bar_yellow{
+    background-color: rgb(253, 210, 97);
+}
+.policies_progress_bar_red{
+    background-color: rgb(185, 59, 59);
+}
+

@@ -1,0 +1,62 @@
+/* Базові стилі для всіх пристроїв */
+.messages_container {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.message_item {
+     width: 780px;
+    background: rgb(30, 34, 51);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 1px solid #333364;
+}
+
+/* Планшети (768px і нижче) */
+@media screen and (max-width: 768px) {
+    .messages_container {
+        padding: 15px;
+    }
+
+    .message_title_status {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .message_meta {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .policies_table {
+        overflow-x: auto;
+        display: block;
+    }
+
+    .policies_tabs {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Мобільні пристрої (480px і нижче) */
+@media screen and (max-width: 480px) {
+    .messages_container {
+        padding: 10px;
+    }
+
+    .message_attachments {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .reply_btn {
+        width: 100%;
+    }
+
+    .policies_input {
+        width: 100%;
+    }
+}

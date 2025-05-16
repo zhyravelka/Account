@@ -1,0 +1,31 @@
+{
+    "messages": [
+        {
+            "id": 1,
+            "title": "Policy Renewal - Auto Insurance 5/15/25",
+            "status": "NEW",
+            "author": "Michael Roberts",
+            "date": "Apr 5",
+            "content": "Hello Arthur, I'm reaching out regarding the upcoming auto policy renewal for Real Estate Group, LLC. The current policy expires on 6/30/2024...",
+            "attachments": 3
+        },
+        {
+            "id": 2,
+            "title": "New Quote Request - Workers Comp Insurance",
+            "status": "NEW",
+            "author": "Sarah Chen",
+            "date": "Apr 5",
+            "content": "Hi Arthur, Real Estate Group has expressed interest in adding workers compensation coverage to their insurance portfolio...",
+            "attachments": 3
+        },
+        {
+            "id": 3,
+            "title": "Fwd: New Submission - BPM Real Estate - EFF 4/1/24",
+            "status": "Responded",
+            "author": "Joshua Dunmire",
+            "date": "Mar 25",
+            "content": "Arthur, attached please find our submission for the above mentioned applicant. We have...",
+            "attachments": 0
+        }
+    ]
+}

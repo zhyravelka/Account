@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Details</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header_title">
+                <h1>Hi Arthur, welcome! You have 12 open tasks.</h1>
+            </div>
+            <div class="header_serch">
+                <div class="header_input">
+                    <input class="search-input" type="text" placeholder="Search" >
+                </div>
+            </div>
+            <div class="header_text">AR</div>
+        </div>
+    </header>
+    <hr class="header_line">
+    <nav class="navigation">
+        <button class="nav_button active">
+            <i class="fas fa-home"></i> 
+            Dashboard
+        </button>
+        <button class="nav_button">
+            <i class="fas fa-database"></i> 
+            Accounts
+        </button>
+        <button class="nav_button">
+            <i class="fas fa-users"></i>
+            Brokers
+        </button>
+        <button class="nav_button">
+            <i class="fas fa-file-export"></i>
+            Submissions
+        </button>
+        <button class="nav_button">
+            <i class="fas fa-building"></i>
+            Organizations
+        </button>
+        <button class="nav_button">
+            <i class="fas fa-bullseye"></i>
+            Goals & Rules
+        </button>
+        <button class="nav_button">
+            <i class="fas fa-key"></i>
+            Admin
+        </button>
+    </nav>
+
+    <div class="main_container">
+        <section class="company_details">
+            <div class="company_page_header">
+                <div class="company_navigation">
+                    <a href="#" class="path_item">Dashboard</a>
+                    <span class="path_separator">//</span>
+                    <a href="#" class="path_item">Accounts</a>
+                    <span class="path_separator">//</span>
+                    <a href="#" class="path_item active">Maritime Logistics Corp</a>
+                </div>
+
+                <div class="company_container">
+                    <div class="company_info">
+                        <img src="./images/logo.png" alt="Maritime Logistics Corp" class="company_logo">
+                        <div class="company_details">
+                            <h1>Maritime Logistics Corp</h1>
+                            <span class="value">
+                                425 Harbor Boulevard, Suite 300<br>
+                                Seattle, WA 98104
+                            </span>
+                        </div>
+                        <div class="account_info">
+                            <div class="info_item">
+                                <span class="label">EXISTING ACCOUNT</span>
+                                <span class="value">54383</span>
+                            </div>
+                            <div class="info_item">
+                                <span class="label">BROKER</span>
+                                <span class="value">Marsh McLennan</span>
+                            </div>
+                            <div class="info_item">
+                                <span class="label">UNDERWRITER</span>
+                                <span class="value">Kate Johnson</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="attention_box">
+                        <div class="attention_header">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <h2>Needs Attention</h2>
+                        </div>
+                        <div class="attention_items">
+                            <div class="attention_item">
+                                <h3>Marine Survey Required</h3>
+                                <p>Scheduled for 05/12/2025</p>
+                                <a href="#" class="link_blue">Review details link →</a>
+                            </div>
+                            <div class="attention_item">
+                                <h3>Loss Control Complete</h3>
+                                <p>Last inspection: 02/15/2025</p>
+                                <a href="#" class="link_blue">View report →</a>
+                            </div>
+                            <div class="attention_item">
+                                <h3>Claims Review Required</h3>
+                                <p>3 open claims // $245,000 TTL</p>
+                                <a href="#" class="link_blue">View claims →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="performance_metrics">
+                    <h2>Performance Metrics</h2>
+                    <div class="metrics_container">
+                    <div class="metric_card">
+                            <div class="winnability_header">
+                                <h3>Winnability</h3>
+                                <div class="rating">
+                                    <span class="dot filled"></span>
+                                    <span class="dot filled"></span>
+                                    <span class="dot filled"></span>
+                                    <span class="dot filled"></span>
+                                </div>
+                            </div>
+                            <p class="metric_value">Very Strong</p>
+                            <a href="#" class="metric_link">See all factors →</a>
+                        </div>  
+
+                        <div class="metric_card">
+                            <h3>Loss Ratio</h3>
+                            <div class="ratio_info">
+                                <p class="ratio_value">25%</p>
+                                <p class="ratio_target">vs 42% target</p>
+                            </div>
+                            <a href="#" class="metric_link">View history →</a>
+                        </div>
+
+                        <div class="metric_card">
+                            <h3>Premium Growth</h3>
+                            <div class="growth_info">
+                                <p class="growth_value">12.4%</p>
+                                <p class="growth_label">YoY increase</p>
+                            </div>
+                            <p class="growth_target">$123M vs $150M Target</p>
+                            <a href="#" class="metric_link">View trend →</a>
+                        </div>
+
+                    <div class="metric_card_distribution">
+                            <h3>Exposure Distribution</h3>
+                            <div class="distribution_list">
+                                <div class="distribution_list_item">
+                                    <div class="distribution_item">
+                                        <div class="distribution_item blue_marine_cargo"></div>
+                                        <div class="distribution_item dark_blue"></div> 
+                                    </div>
+                                    <div class="distribution_bar">
+                                            <span class="distribution_text">Marine Cargo: 71.4%</span>
+                                    </div> 
+                                </div>
+                                <div class="distribution_list_item">
+                                    <div class="distribution_item">
+                                        <div class="distribution_item blue_general_liability"></div>
+                                        <div class="distribution_item dark_blue"></div> 
+                                    </div>
+                                    <div class="distribution_bar">
+                                            <span class="distribution_text">General Liability: 20%</span>
+                                    </div> 
+                                </div>
+                                <div class="distribution_list_item">
+                                    <div class="distribution_item">
+                                        <div class="distribution_item blue_workers_comp"></div>
+                                        <div class="distribution_item dark_blue"></div> 
+                                    </div>
+                                    <div class="distribution_bar">
+                                            <span class="distribution_text">Workers Comp: 8.6%</span>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="policies">
+            <h2>Policies</h2>
+            <div class="policies_container">
+                <div class="policy_card">
+                    <div class="policy_header">
+                        <i class="fas fa-ship"></i>
+                        <h3>Marine Cargo</h3>
+                    </div>
+                    <div class="policy_details">
+                        <p class="premium">Premium: $625,000</p>
+                        <p class="eff_date">Eff.Date: 6/30/2026</p>
+                    </div>
+                </div>
+
+                <div class="policy_card">
+                    <div class="policy_header">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>General Liability</h3>
+                    </div>
+                    <div class="policy_details">
+                        <p class="premium">Premium: $175,000</p>
+                        <p class="eff_date">Eff.Date: 6/30/2026</p>
+                    </div>
+                </div>
+
+                <div class="policy_card">
+                    <div class="policy_header">
+                        <i class="fas fa-user-hard-hat"></i>
+                        <h3>Workers Comp</h3>
+                    </div>
+                    <div class="policy_details">
+                        <p class="premium">Premium: $75,000</p>
+                        <p class="eff_date">Eff.Date: ---</p>
+                    </div>
+                </div>
+
+                <div class="policy_card">
+                    <div class="policy_header">
+                        <i class="fas fa-building"></i>
+                        <h3>Property</h3>
+                    </div>
+                    <div class="policy_details">
+                        <p class="premium">Premium: $64,829.83</p>
+                        <p class="eff_date">Eff.Date: ---</p>
+                    </div>
+                </div>
+
+                <div class="policy_card">
+                    <div class="policy_header">
+                        <i class="fas fa-umbrella"></i>
+                        <h3>Umbrella</h3>
+                    </div>
+                    <div class="policy_details">
+                        <p class="premium">Premium: $275,000</p>
+                        <p class="eff_date">Eff.Date: 13/03/2026</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <section class="account_status">
+        <div class="status_container">
+            <div class="status_section">
+                <div class="account_status_header">
+                    <h2>Account Status</h2>
+                        <div class="compliance_header">
+                            <h2>Compliance & Documentation</h2>
+                            <a href="#" class="see_history">See history →</a>
+                        </div>
+                </div>
+            </div>
+            <div class="status_content">
+                <div class="status_timeline">
+                            <div class="timeline_item">
+                                <div class="status_icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p>Submitted</p>
+                            </div>
+                            <div class="timeline_item">
+                                <div class="status_icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p>Review</p>
+                            </div>
+                            <div class="timeline_item">
+                                <div class="status_icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p>Quote</p>
+                            </div>
+                            <div class="timeline_item">
+                                <div class="status_icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p>Bind</p>
+                            </div>
+                            <div class="timeline_item">
+                                <div class="status_icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p>Issue</p>
+                            </div>
+                            <div class="timeline_item">
+                                <div class="status_icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p>Renew</p>
+                            </div>
+                </div>
+                <div class="compliance_section">
+                    <div class="compliance_grid">
+                        <div class="compliance_item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>KYC verification</span>
+                        </div>
+                        <div class="compliance_item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Required Documentation</span>
+                        </div>
+                        <div class="compliance_item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Regulatory approval</span>
+                        </div>
+                        <div class="compliance_item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Financial Verification</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        </section>
+
+        <section class="account_details">
+            <h2>Account Details</h2>
+            <div class="winnability_container">
+                <div class="side_nav">
+                    <div class="decision_support">
+                        <h2>DECISION SUPPORT <span class="count">4</span></h2>
+                        <ul>
+                            <li>
+                                <a class="active" href="#">Winnability</a>
+                            </li>
+                            <li>
+                                <a href="#">Exposure Review & Suggested Coverage</a>
+                            </li>
+                            <li>
+                                <a href="#">Portfolio Strategy Alignment</a>
+                            </li>
+                            <li>
+                                <a href="#">Broker Analytics</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="risk_assessment">
+                        <h2>RISK ASSESSMENT <span class="count">6</span></h2>
+                    </div>
+                    
+                    <div class="documents">
+                        <h2>DOCUMENTS AND COMPLIANCE <span class="count">2</span></h2>
+                    </div>
+                </div>
+
+                <!-- Main Content -->
+                <div class="winnability_content">
+                    <h2>Winnability</h2>
+                    
+                    <!-- Top Metrics Row -->
+                    <div class="metrics_row">
+                        <!-- Overall Score -->
+                        <div class="score_card">
+                            <h3>Overall Score</h3>
+                        <div class="score_value">
+                                <div class="score">
+                                    82%
+                                </div>
+                                <div class="rating">
+                                    <div class="rating_dots">
+                                        <span class="dot filled"></span>
+                                        <span class="dot filled"></span>
+                                        <span class="dot filled"></span>
+                                        <span class="dot filled"></span>
+                                        <span class="rating_text">Very Strong</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Historical Trend -->
+                        <div class="trend_card">
+                            <h3>Historical trend</h3>
+                            <div class="trend_graph">
+                                <svg width="100%" height="100%" viewBox="0 0 300 100">
+                                    <path class="trend_line" 
+                                        d="M 0,70 
+                                            L 60,50 
+                                            L 120,60 
+                                            L 180,45 
+                                            L 240,55 
+                                            L 300,35" />
+                                </svg>
+                                <div class="months">
+                                    <span>Jan</span>
+                                    <span>Feb</span>
+                                    <span>Mar</span>
+                                    <span>Apr</span>
+                                    <span>Now</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Position -->
+                        <div class="position_card">
+                            <h3>Position</h3>
+                            <div class="position_metrics">
+                                <div class="metric_list">
+                                    <div class="metric_item">
+                                        <div class="metric_item blue_score"></div>
+                                        <div class="metric_item dark_blue"></div> 
+                                    </div>
+                                    <div class="metric_bar">
+                                            <span class="metric_text_active">Your score: 82%</span>
+                                    </div> 
+                                </div>
+                            <div class="metric_list">
+                                    <div class="metric_item">
+                                        <div class="metric_item blue_market_avg"></div>
+                                        <div class="metric_item dark_blue"></div> 
+                                    </div>
+                                    <div class="metric_bar">
+                                            <span class="metric_text">Market Avg: 68%</span>
+                                    </div> 
+                                </div>
+                                <div class="metric_list">
+                                    <div class="metric_item">
+                                        <div class="metric_item blue_competitor"></div>
+                                        <div class="metric_item dark_blue"></div> 
+                                    </div>
+                                    <div class="metric_bar">
+                                            <span class="metric_text">Top competitor: 88%</span>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Factors Container -->
+                    <div class="factors_container">
+                        <div class="increasing_factors">   
+                                <div class="increasing_factors_header">
+                                    <div class="increasing_factors_icon">
+                                        <i class="fas fa-arrow-up"></i> 
+                                    </div>
+                                    <h3>
+                                        Increasing Winnability
+                                    </h3>
+                                </div>
+                            <div class="factor_list">
+                                <div class="factor_item">
+                                    <span class="number_green">1</span>
+                                    <div>
+                                        <span class="factor_name">Brokers relationship</span>
+                                        <div class="brokers_container">
+                                            <div class="progress_bar_brokers">
+                                                <div class="progress_brokers green"></div>
+                                                <div class="progress_brokers dark_green"></div>
+                                            </div>
+                                            <div class="factor_brokers_container">
+                                                <span class="factor_text">+28%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="factor_item">
+                                    <span class="number_green">2</span>
+                                    <div>
+                                        <span class="factor_name">Loss history</span>
+                                        <div class="brokers_container">
+                                            <div class="progress_bar_history">
+                                                <div class="progress_history green"></div>
+                                                <div class="progress_history dark_green"></div>
+                                            </div>
+                                            <div class="factor_history_container">
+                                                <span class="factor_text">+22%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="factor_item">
+                                    <span class="number_green">3</span>
+                                    <div>
+                                        <span class="factor_name">Industry growth</span>
+                                        <div class="brokers_container">
+                                            <div class="progress_bar_industry">
+                                                <div class="progress_industry green"></div>
+                                                <div class="progress_industry dark_green"></div>
+                                            </div>
+                                            <div class="factor_industry_container">
+                                                <span class="factor_text">+16%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="factor_item">
+                                    <span class="number_green">4</span>
+                                    <div>
+                                        <span class="factor_name">Multiline opportunity</span>
+                                        <div class="brokers_container">
+                                            <div class="progress_bar_multiline">
+                                                <div class="progress_multiline green"></div>
+                                                <div class="progress_multiline dark_green"></div>
+                                            </div>
+                                            <div class="factor_multiline_container">
+                                                <span class="factor_text">+11%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Decreasing Factors -->
+                        <div class="decreasing_factors">
+                            <div class="decreasing_factors_header">
+                                    <div class="decreasing_factors_icon">
+                                        <i class="fas fa-arrow-down"></i>
+                                    </div>
+                                    <h3>
+                                        Decreasing Winnability
+                                    </h3>
+                            </div>
+                            <div class="factor_list">
+                                <div class="factor_item">
+                                    <span class="number_yellow">1</span>
+                                    <div>
+                                        <span class="factor_name">Premium pricing</span>
+                                        <div class="decreasing_container">
+                                            <div class="progress_bar_premium">
+                                                <div class="factor_bar negative"></div>
+                                                <div class="factor_bar negative dark_yellow"></div>
+                                            </div>
+                                            <div class="factor_premium_container">
+                                                <span class="factor_text">-24%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="factor_item">
+                                    <span class="number_yellow">2</span>
+                                    <div>
+                                        <span class="factor_name">Total exposure</span>
+                                        <div class="decreasing_container">
+                                            <div class="progress_bar_total_exposure">
+                                                <div class="factor_bar negative"></div>
+                                                <div class="factor_bar negative dark_yellow"></div>
+                                            </div>
+                                            <div class="factor_premium_container">
+                                                <span class="factor_text">-18%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="factor_item">
+                                    <span class="number_yellow">3</span>
+                                    <div>
+                                        <span class="factor_name">Loss ratio trend</span>
+                                        <div class="decreasing_container">
+                                            <div class="progress_bar_loss_ratio">
+                                                <div class="factor_bar negative"></div>
+                                                <div class="factor_bar negative dark_yellow"></div>
+                                            </div>
+                                            <div class="factor_premium_container">
+                                                <span class="factor_text">-13%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="factor_item">
+                                    <span class="number_yellow">4</span>
+                                    <div>
+                                        <span class="factor_name">Market competition</span>
+                                        <div class="decreasing_container">
+                                            <div class="progress_bar_market_competition">
+                                                <div class="factor_bar negative"></div>
+                                                <div class="factor_bar negative dark_yellow"></div>
+                                            </div>
+                                            <div class="factor_premium_container">
+                                                <span class="factor_text">-5%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI Recommendations -->
+                <div class="ai_recommendations">
+                        <div class="ai_recommendations_header">
+                            <div class="icon_container">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h3>
+                                AI-Powered Recommendations
+                            </h3>
+                        </div>
+                        <div class="recommendation_items">
+                            <div class="recommendation_item">
+                                <div class="recommendation_content">
+                                    <div class="recommendation_header">
+                                        <span class="recommendation_header_title">Offer 5% premium discount in exchange for 3-year commitment<br></span>
+                                        <span class="recommendation_description">
+                                            Historical win rate increases 24% with multi-year commitments. Current pricing is 12% above market average. This approach would strengthen retention while maintaining adequate profitability.
+                                        </span>
+                                    </div>
+                                    <button class="apply_button">Apply</button>
+                                </div>
+                            </div>
+                            <div class="recommendation_item">
+                                <div class="recommendation_content">
+                                    <div class="recommendation_header">
+                                        <span class="recommendation_header_title">Propose risk control services for cargo handling procedures<br></span>
+                                        <span class="recommendation_description">
+                                            Can potentially reduce loss ratio by 15-20% based on similar maritime accounts in your portfolio. Specific focus on loading/unloading operations would address the most frequent claim scenarios.
+                                        </span>
+                                    </div>
+                                    <button class="apply_button">Apply</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="communication_section">
+            <h2>Communication</h2>
+            <div class="communication_container">
+                <div class="communication_header_container">
+                    <div class="communication_header">
+                        <div class="search_bar">
+                            <div class="search_input">
+                                <input class="search_input_text" type="text" placeholder="Search" >
+                            </div>
+                        </div>
+                        <button class="communication_btn">Filter</button>
+                        <button class="communication_btn">Group</button>
+                    </div>
+                </div>
+                <div class="messages_container">
+                        <div>
+                            <div class="message_item new">
+                                <div class="message_title_status">
+                                    <div class="message_status">
+                                        NEW
+                                    </div>
+                                    <h2>Policy Renewal - Auto Insurance 5/15/25</h2>
+                                </div>
+                                <div class="message_content">
+                                    <div class="message_header">
+                                        <div class="message_meta">
+                                            <span class="author">Michael Roberts</span>
+                                            <span class="date">Apr 5</span>
+                                        </div>
+                                    </div>
+                                    <p class="message_text">
+                                        Hello Arthur, I’m reaching out regarding the upcoming auto policy renewal for Real Estate<br>
+                                        Group, LLC. The current policy expires on 6/30/2024. Would you like to review coverage <br>
+                                        options before proceeding with the renewal? I’ve attached the current policy details and <br>
+                                        premium breakdown for your reference.
+                                    </p>
+                                    <div class="message_attachments">
+                                        <span class="attachment_count">
+                                            <i class="fas fa-paperclip"></i>
+                                            3 attachments
+                                        </span>
+                                        <button class="reply_btn">Reply</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="message_item new">
+                                <div class="message_title_status">
+                                    <div class="message_status">
+                                        NEW
+                                    </div>
+                                    <h2>New Quote Request - Workers Comp Insurance</h2>
+                                </div>
+                                <div class="message_content">
+                                    <div class="message_header">
+                                        <div class="message_meta">
+                                            <span class="author">Sarah Chen // Apr 5</span>
+                                            <span class="date">Apr 5</span>
+                                        </div>
+                                    </div>
+                                    <p class="message_text">
+                                        Hi Arthur, Real Estate Group has expressed interest in adding workers compensation<br> 
+                                        coverage to their insurance portfolio. I’ve completed the initial risk assessment based
+                                    </p>
+                                    <div class="message_attachments">
+                                        <span class="attachment_count">
+                                            <i class="fas fa-paperclip"></i>
+                                            3 attachments
+                                        </span>
+                                        <button class="reply_btn">Reply</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="message_item new">
+                                <div class="message_title_status">
+                                    <div class="message_status">
+                                        Responded
+                                    </div>
+                                    <h2>Fwd: New Submission - BPM Real Estate - EFF 4/1/24</h2>
+                                </div>
+                                <div class="message_content">
+                                    <div class="message_header">
+                                        <div class="message_meta">
+                                            <span class="author">Joshua Dunmire</span>
+                                            <span class="date">Mar 25</span>
+                                        </div>
+                                    </div>
+                                    <p class="message_text">Arthur, attached please find our submission for the above mentioned applicant. We have..</p>
+                                </div>
+                            </div>
+
+
+                            <div class="message_item new">
+                                <div class="message_content">
+                                    <div class="message_header">
+                                        <h2>New Quote Request - Workers Comp Insurance</h2>
+                                        <div class="message_meta">
+                                            <span class="author">Sarah Chen</span>
+                                            <span class="date">Apr 5</span>
+                                        </div>
+                                    </div>
+                                    <p class="message_text">Hello Arthur, I am pleased to present you with a submission on this client's upcoming...</p>
+                                    <div class="message_attachments">
+                                        <span class="attachment_count">
+                                            <i class="fas fa-paperclip"></i>
+                                            5 attachments
+                                        </span>
+                                        <button class="reply_btn">Reply</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>  
+        </section>
+
+        <section class="policies_section">
+            <h2>Policies</h2>
+            <div class="policies_info_section">
+                <div>
+                    <div class="policies_container_table">
+                        <div class="policies_tabs">
+                                <div class="policies_serch">
+                                    <div class="policies_input">
+                                        <input class="search_policies_input" type="text" placeholder="Search">
+                                    </div>
+                                </div>
+                            <button class="policies_tab">Filter</button>
+                            <button class="policies_tab">Group</button>
+                        </div>
+                    
+                    </div>
+                    <table class="policies_table">
+                        <thead>
+                            <tr>
+                                <th>LINE</th>
+                                <th>EFF.DATE</th>
+                                <th>EXP.DATE</th>
+                                <th>STATUS</th>
+                                <th>EXPIRING TECH</th>
+                                <th>EXPIRING PREMIUM</th>
+                                <th>RENEWAL TO TECH </th>
+                                <th>RENEWAL TECH </th>
+                                <th>RENEWAL PREMIUM</th>
+                                <th>RATE CHANGE</th>
+                                <th>LOSS RATIO</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Marine Cargo<br><span class="policies_subtext">17030212</span></td>
+                                <td>6/30/2026</td>
+                                <td>6/30/2027</td>
+                                <td><span class="status"><span class="policies_status_green"></span>Active</span></td> 
+                                <td>$587,500</td>
+                                <td>$605,000</td>
+                                <td>$610,000</td>
+                                <td>$620,000</td>
+                                <td>$625,000</td>
+                                <td>3.3%</td>
+                                <td><span class="policies_progress_bar_green"><span class="progress-value">22%</span></span></td>    
+                                <td><i class="fas fa-ellipsis-v"></i></td>   
+                            </tr>
+                            <tr>
+                                <td>General Liability<br><span class="policies_subtext">4631092</span></td>
+                                <td>6/30/2026</td>
+                                <td>6/30/2027</td>
+                                <td><span class="status"><span class="policies_status_green"></span>Active</span></td> 
+                                <td>$160,000</td>
+                                <td>$165,000</td>
+                                <td>$170,000</td>
+                                <td>$172,500</td>
+                                <td>$175,000</td>
+                                <td><span class="policies_rate_change">6.1%</span></td>
+                                <td><span class="policies_progress_bar_green"><span class="progress-value">55%</span></span></td>    
+                                <td><i class="fas fa-ellipsis-v"></i></td>   
+                            </tr>
+                            <tr>
+                                <td>Workers Comp<br><span class="policies_subtext">9182371</span></td>
+                                <td>Pending</td>
+                                <td>Pending</td>
+                                <td><span class="status"><span class="policies_status_yellow"></span>Pending</span></td> 
+                                <td>$0</td>
+                                <td>$0</td>
+                                <td>$73,500</td>
+                                <td>$75,000</td>
+                                <td>$75,000</td>
+                                <td>N/A</td>
+                                <td>N/A</td>    
+                                <td><i class="fas fa-ellipsis-v"></i></td>  
+                            </tr>
+                            <tr>
+                                <td>Umbrella<br><span class="policies_subtext">5274936</span></td>
+                                <td>13/03/2026</td>
+                                <td>13/03/2027</td>
+                                <td><span class="status"><span class="policies_status_green"></span>Active</span></td> 
+                                <td>$245,000</td>
+                                <td>$250,000</td>
+                                <td>$267,500</td>
+                                <td>$270,000</td>
+                                <td>$275,000</td>
+                                <td><span class="policies_rate_change">10.0%</span></td>
+                                <td><span class="policies_progress_bar_red"><span class="progress-value">78%</span></span></td>    
+                                <td><i class="fas fa-ellipsis-v"></i></td>  
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>TOTAL(4)</td> 
+                                <td>$992,500</td>
+                                <td>$1,020,000</td>
+                                <td>$1,121,000</td>
+                                <td>$1,137,500</td>
+                                <td>$1,150,000</td>
+                                <td><span>6.9%</span></td>
+                                <td><span class="policies_progress_bar_yellow"><span class="progress-value">58.3%</span></span></td>    
+                                <td></td> 
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div> 
+        </section>
+
+
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="./Js/tabs.js" defer></script>
+</body>
+</html>
+
+
+
